@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+* {
+    font-family: outfit;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: #223;
+  color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+  background-color: #eee;
+  }
+}
+
+.gradient-name{
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s linear;
+}
+
+.gradient-name:hover{
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.anchor-line:hover{
+  scale: 1.1;
+  transition: 0.25s linear;
+}
+
+
+
+.anchor-line::after{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  transition: 0.25s linear;
+  background: linear-gradient(to left, #1fb5cd, #5a97e2, #465fc5);  
+}
+
+.anchor-line:hover::after{
+  width: 95%;
+}
+
+.background{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+}
