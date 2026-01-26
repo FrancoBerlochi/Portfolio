@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+* {
+    font-family: outfit;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: #0f1729;
+  color: #fff;
+  overflow-x: hidden;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+  background-color: #eee;
+  overflow: hidden;
+  }
+}
+
+.gradient-name{
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s linear;
+}
+
+.gradient-name:hover{
+   scale: 102%;
+
+}
+
+
+
+.anchor-line::after{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  transition: 0.25s linear;
+  background: linear-gradient(to left, #00c8bc,#1fb5cd, #5a97e2);  
+}
+
+.anchor-line:hover::after{
+  width: 95%;
+}
+
+.background{
+  width: 100%;
+  height: 100%;
+  background: #124;
+}
+
+.borderRotate::after, .borderRotate::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  padding: 4px;
+  border-radius: 50%;
+  z-index: -1;
+  background: linear-gradient(to bottom, #00c8bc,#53eafd,#3389f3,#6cedd5, #5eedb9);
+  animation: borderRotate 3s linear infinite;
+}
+
+.borderRotate::before{
+  filter: blur(1rem);
+  opacity: 0.25;
+}
+
+@keyframes borderRotate {
+  from {transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+.presentation-text{
+  animation: presentationText 2s ease;
+}
+
+@keyframes presentationText {
+  0%{
+    transform: translateX(-1000px);
+  }
+
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.presentation-icons{
+  animation: presentationIcons 1.3s ease-out;
+}
+
+@keyframes presentationIcons{
+  0%{
+    transform: translateY(1000px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.presentation-img{
+
+}
+
+@keyframes presentationImg {
+  0%{
+    transform: translateX(1000px);
+  }
+
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.header {
+  animation: header 2.5s ease;
+}
+
+@keyframes header {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@media (width < 600px) {
+ .borderRotate{
+    width: 60vw;
+    height: 60vw;
+  }
+  .borderRotate::before, .borderRotate::after{
+    width: 60vw;
+    height: 60vw;
+  }
+}

@@ -1,0 +1,120 @@
+import yo from '../assets/yo.webp'
+import github from '../assets/github.png'
+import linkedin from '../assets/linkedin.png'
+import insta from '../assets/instagram.png'
+import { useEffect, useState } from 'react'
+
+
+const HomePage = () => {
+  const [navColor, setNavColor] = useState("#inicio");
+  const [mobile, setMobile] = useState(false);
+
+ useEffect (() => {
+    if (window.innerWidth < 500) {
+      setMobile(true)
+    } else {
+      setMobile(false)
+    }
+  },[])
+
+  const handleSetNavColor = (path) => {
+    setNavColor(path)
+  }
+  return (
+    <div>
+      <div className="w-full flex justify-center">
+        <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-6 py-4  bg-[#333344bf] header rounded-4xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
+          {!mobile && (
+            <a
+              href="#inicio"
+              className="text-xl gradient-name bg-gradient-to-r from-[#00c8bc] to-blue-300 hover:bg-gradient-to-r hover:from-blue-400 hover:to-[#00c8bc]"
+            >
+              Franco Berlochi
+            </a>
+          )}
+          <nav className="flex lg:gap-8 justify-between max-md:px-4">
+            <a
+              href="#inicio"
+              onClick={() => handleSetNavColor("#inicio")}
+              className={
+                navColor == "#inicio"
+                  ? "anchor-line relative text-lg text-cyan-400 max-md:text-[16px]"
+                  : "anchor-line relative text-lg max-md:text-[16px]"
+              }
+            >
+              inicio
+            </a>
+            <a
+              href="#proyectos"
+              onClick={() => handleSetNavColor("#proyectos")}
+              className={
+                navColor == "#proyectos"
+                  ? "anchor-line relative text-lg text-cyan-400 max-md:text-[16px]"
+                  : "anchor-line relative text-lg max-md:text-[16px]"
+              }
+            >
+              Proyectos
+            </a>
+            <a
+              href="#sobremi"
+              onClick={() => handleSetNavColor("#sobremi")}
+              className={
+                navColor == "#sobremi"
+                  ? "anchor-line relative text-lg text-cyan-400 max-md:text-[16px]"
+                  : "anchor-line relative text-lg max-md:text-[16px]"
+              }
+            >
+              Sobre mí
+            </a>
+            <a
+              href="#contacto"
+              onClick={() => handleSetNavColor("#contacto")}
+              className={
+                navColor == "#contacto"
+                  ? "anchor-line relative text-lg text-cyan-400 max-md:text-[16px]"
+                  : "anchor-line relative text-lg max-md:text-[16px]"
+              }
+            >
+              Contacto
+            </a>
+          </nav>
+        </header>
+      </div>
+      <main className="">
+        <section className="lg:pt-48 flex flex-col lg:flex-row lg:justify-between justify-around max-md:items-center lg:mx-16 h-screen">
+          <div className="mt-56 max-md:mt-24 lg:ml-64 flex flex-col items-center lg:block">
+            <h1 className="text-6xl presentation-text text-center">
+              Franco Berlochi
+            </h1>
+            <h2 className="text-4xl text-cyan-300 mt-2 presentation-text">
+              Full Stack Developer
+            </h2>
+            <ul className="flex gap-6 mt-6 presentation-icons">
+              <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
+                <img src={insta} alt="" className="w-6 h-6" />
+              </li>
+              <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
+                <img src={linkedin} alt="" className="w-6 h-6" />
+              </li>
+              <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
+                <img src={github} alt="" className="w-6 h-6" />
+              </li>
+            </ul>
+          </div>
+          <div className="relative borderRotate lg:mt-10 w-[30vw] h-[30vw] p-[4px] rounded-full mr-32">
+            <div className="lg:mr-48 background presentation-img mask-b-from-160 lg:mt-0 rounded-full">
+              <img
+                src={yo}
+                alt=""
+                className="w-[25vw] h-[30vw] ml-9 max-md:w-[50vw] max-md:h-[60vw] max-md:ml-4"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+  );
+}
+
+export default HomePage;
