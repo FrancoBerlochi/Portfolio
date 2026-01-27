@@ -35,7 +35,6 @@ a{
 }
 
 
-
 .anchor-line::after{
   content: "";
   position: absolute;
@@ -69,7 +68,7 @@ a{
   border-radius: 50%;
   z-index: -1;
   background: linear-gradient(to bottom, #00c8bc,#53eafd,#3389f3,#6cedd5, #5eedb9);
-  animation: borderRotate 3s linear infinite;
+  animation: borderRotate 3s linear infinite, presentationImg 2s ease;
 }
 
 .borderRotate::before{
@@ -97,22 +96,21 @@ a{
 }
 
 .presentation-icons{
-  animation: presentationIcons 1.3s ease-out;
+  animation: presentationIcons 2.3s linear;
 }
 
 @keyframes presentationIcons{
   0%{
-    transform: translateY(1000px);
+    opacity: 0;
   }
   100%{
-    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
 .presentation-img{
-
+  animation: presentationImg 2s ease;
 }
-
 @keyframes presentationImg {
   0%{
     transform: translateX(1000px);
