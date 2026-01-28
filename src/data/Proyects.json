@@ -5,7 +5,8 @@
       "shortDescription":
         "Un e-commerce para venta de dibujos digitales con mercado pago y polar.sh (pasarela de pagos)",
         "longDescription":"",
-      "tech": ["/assets/nextjs.svg", "/assets/reactcom.svg","/assets/tailwind.svg", "/assets/typescript.svg", "/assets/mercadopago.png","/assets/logomark.svg"],
+        "img":["/assets/github.png"],
+      "tech": ["/assets/nextjs.svg","/assets/nextjs.svg", "/assets/reactcom.svg","/assets/tailwind.svg", "/assets/typescript.svg", "/assets/mercadopago.png","/assets/logomark.svg"],
       "links": ["https://google.com", "https://google.com"]
     },
     {
@@ -13,6 +14,7 @@
       "name": "E-commerce de Comisiones",
       "shortDescription": "Un e-commerce para venta de dibujos digitales con mercado pago y polar.sh (pasarela de pagos)",
       "longDescription": "",
+      "img": ["/assets/github.png"],
       "tech": [
         "/assets/nextjs.svg",
         "/assets/reactcom.svg",
@@ -28,6 +30,7 @@
       "name": "E-commerce de Comisiones",
       "shortDescription": "Un e-commerce para venta de dibujos digitales con mercado pago y polar.sh (pasarela de pagos)",
       "longDescription": "",
+      "img": ["/assets/github.png"],
       "tech": [
         "/assets/nextjs.svg",
         "/assets/reactcom.svg",
@@ -43,6 +46,7 @@
       "name": "E-commerce de Comisiones",
       "shortDescription": "Un e-commerce para venta de dibujos digitales con mercado pago y polar.sh (pasarela de pagos)",
       "longDescription": "",
+      "img": ["/assets/github.png"],
       "tech": [
         "/assets/nextjs.svg",
         "/assets/reactcom.svg",

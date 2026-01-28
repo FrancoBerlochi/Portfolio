@@ -28,7 +28,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="w-screen flex justify-center">
-        <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-6 py-4  bg-[#333344bf] header rounded-4xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
+        <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-4 py-4  bg-[#333344bf] header rounded-4xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
           <Nav
             navColor={navColor}
             mobile={mobile}
@@ -45,8 +45,13 @@ const HomePage = () => {
             <h2 className="text-4xl text-cyan-300 mt-2 presentation-text mb-10">
               Full Stack Developer
             </h2>
-            <div className='hover:scale-105 w-fit transition-all duration-200'>
-              <a href="#proyectos" className='text-2xl bg-[#30d4d5] rounded-xl p-2'>Ver Proyectos</a>
+            <div className="hover:scale-105 w-fit transition-all duration-200 header">
+              <a
+                href="#proyectos"
+                className="text-2xl bg-[#30d4d5] rounded-xl p-2"
+              >
+                Ver Proyectos
+              </a>
             </div>
             <ul className="flex gap-6 mt-10 presentation-icons ">
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
@@ -72,7 +77,26 @@ const HomePage = () => {
         </section>
         <Proyects />
       </main>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

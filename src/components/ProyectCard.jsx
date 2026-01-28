@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
-const ProyectCard = ({ id, name, description, tech, links }) => {
+const ProyectCard = ({ id, name, description, img, tech, links }) => {
   return (
-    <div className="flex flex-col gap-4 p-6 min-[1750px]:max-[1921px]:h-[50vh] h-[52vh] bg-[#1b2647] rounded-2xl border border-transparent hover:border-[#08d5d4] transition-all duration-300 ">
+    <div className="flex flex-col gap-4 p-6 min-[1750px]:max-[1921px]:h-[78vh] h-[52vh] bg-[#1b2647] rounded-2xl border border-transparent  transition-all duration-300 hover:border-[#08d5d4] hover:scale-[1.04] mb-6">
+      <div className="w-85 h-85 bg-red-200">
+        <img src={img[0]} alt="" />
+      </div>
       <h2 className="text-2xl">{name}</h2>
       <p className="text-xl text-gray-400 mb-4">{description}</p>
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex gap-2 flex-wrap overflow-y-auto techScroll">
         {tech.map((e) => (
           <img
             key={e}
@@ -14,7 +17,7 @@ const ProyectCard = ({ id, name, description, tech, links }) => {
         ))}
       </div>
 
-      <div className="flex flex-col mt-auto gap-2">
+      <div className="flex flex-col gap-2">
         <Link
           className="w-full bg-[#18d2d3] text-center text-white rounded-md py-2"
           to={`/${id}`}

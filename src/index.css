@@ -2,6 +2,7 @@
 
 * {
     font-family: outfit;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -144,4 +145,10 @@ a{
     width: 60vw;
     height: 60vw;
   }
+}
+
+.techScroll{
+  scrollbar-color: #18d2d3 hsl(225, 45%, 10%);
+  scrollbar-face-color: rgb(0,0,0);
+
 }
