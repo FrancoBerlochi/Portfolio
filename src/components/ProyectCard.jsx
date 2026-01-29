@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 const ProyectCard = ({ id, name, description, img, tech, links }) => {
   return (
-    <div className="flex flex-col gap-4 p-6 min-[1750px]:max-[1921px]:h-[78vh] h-[52vh] bg-[#1b2647] rounded-2xl border border-transparent  transition-all duration-300 hover:border-[#08d5d4] hover:scale-[1.04] mb-6">
-      <div className="w-85 h-85 bg-red-200">
-        <img src={img[0]} alt="" />
+    <div className="flex flex-col gap-4 p-6 min-[1750px]:max-[1921px]:h-[78vh] h-[82vh] bg-[#1b2647] rounded-2xl border border-transparent  transition-all duration-300 hover:border-[#08d5d4] hover:scale-[1.04] mb-6">
+      <div className="min-[1750px]:max-[1921px]:w-85 min-[1750px]:max-[1921px]:h-85 h-75 w-70 bg-red-200">
+        <img src={img[0]} alt="" className="object-cover w-full h-full" />
       </div>
       <h2 className="text-2xl">{name}</h2>
       <p className="text-xl text-gray-400 mb-4">{description}</p>
@@ -12,7 +12,7 @@ const ProyectCard = ({ id, name, description, img, tech, links }) => {
           <img
             key={e}
             src={e}
-            className="bg-[#173854] text-[#08d5d4] w-12 h-12 py-1 px-2 rounded-xl"
+            className="bg-[#173854] w-12 h-12 py-1 px-2 rounded-xl"
           ></img>
         ))}
       </div>

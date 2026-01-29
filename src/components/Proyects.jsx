@@ -3,7 +3,7 @@ import cardsInfo from "../data/Proyects.json";
 
 const Proyects = () => {
   return (
-    <section className="w-screen flex flex-col items-center pt-20" id="proyectos">
+    <section className="w-screen flex flex-col items-center pt-30" id="proyectos">
       <div className="w-[65%] mb-20">
         <h2 className="text-5xl">Proyectos</h2>
       </div>

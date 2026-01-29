@@ -5,6 +5,7 @@ import insta from '/assets/instagram.png'
 import { useEffect, useState } from 'react'
 import Nav from '../components/Nav'
 import Proyects from '../components/Proyects'
+import AboutMe from '../components/AboutMe'
 
 
 
@@ -28,7 +29,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="w-screen flex justify-center">
-        <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-4 py-4  bg-[#333344bf] header rounded-4xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
+        <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-4 py-4  bg-[#333344bf] header rounded-3xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
           <Nav
             navColor={navColor}
             mobile={mobile}
@@ -76,6 +77,7 @@ const HomePage = () => {
           </div>
         </section>
         <Proyects />
+        <AboutMe/>
       </main>
       <br />
       <br />
