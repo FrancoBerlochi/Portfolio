@@ -1,13 +1,12 @@
 import yo from '/assets/yo.webp'
 import github from '/assets/github.png'
 import linkedin from '/assets/linkedin.png'
-import insta from '/assets/instagram.png'
 import { useEffect, useState } from 'react'
 import Nav from '../components/Nav'
 import Proyects from '../components/Proyects'
 import AboutMe from '../components/AboutMe'
-
-
+import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 const HomePage = () => {
 
@@ -27,8 +26,8 @@ const HomePage = () => {
     setNavColor(path)
   }
   return (
-    <div>
-      <div className="w-screen flex justify-center">
+    <>
+      <div className="w-screen flex justify-center" id="inicio">
         <header className="fixed z-10 lg:flex lg:w-[65%] w-[90vw] lg:justify-between lg:px-24 lg:py-4 py-4  bg-[#333344bf] header rounded-3xl mt-4 border-[#00c8bc] drop-shadow-[1px_2px_4px_rgba(28,157,244,0.29)] border-1">
           <Nav
             navColor={navColor}
@@ -56,13 +55,22 @@ const HomePage = () => {
             </div>
             <ul className="flex gap-6 mt-10 presentation-icons ">
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
-                <img src={insta} alt="" className="w-6 h-6" />
+                <a href="/cv/Franco_Berlochi_CV.pdf" download>
+                  <img src="/assets/email.svg" alt="" className="w-6 h-6" />
+                </a>
               </li>
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
-                <img src={linkedin} alt="" className="w-6 h-6" />
+                <a
+                  href="https://www.linkedin.com/in/franco-berlochi-programador"
+                  target="_blanck"
+                >
+                  <img src={linkedin} alt="" className="w-6 h-6" />
+                </a>
               </li>
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
-                <img src={github} alt="" className="w-6 h-6" />
+                <a href="https://github.com/FrancoBerlochi" target="_blanck">
+                  <img src={github} alt="" className="w-6 h-6" />
+                </a>
               </li>
             </ul>
           </div>
@@ -77,29 +85,11 @@ const HomePage = () => {
           </div>
         </section>
         <Proyects />
-        <AboutMe/>
+        <AboutMe />
+        <Contact />
       </main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+      <Footer />
+    </>
   );
 }
 

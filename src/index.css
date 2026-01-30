@@ -145,6 +145,17 @@ a{
     width: 60vw;
     height: 60vw;
   }
+  .presentation-text{
+    animation: presentationText 1.1s linear;
+  }
+  .presentation-img{
+    animation: presentationImg 1.1s linear;
+  }
+  .borderRotate::after, .borderRotate::before{
+    animation: presentationImg 1.1s linear;
+  }
+
+
 }
 
 .techScroll{
