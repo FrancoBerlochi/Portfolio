@@ -20,7 +20,7 @@ const Contact = () => {
             <p className="text-gray-300">Github</p>
             <a
               href="https://github.com/FrancoBerlochi"
-              target="_blanck"
+              target="_blank"
               className="text-[#08d5d4]"
             >
               Franco-Berlochi-Github
@@ -37,7 +37,7 @@ const Contact = () => {
             <p className="text-gray-300">Linkedin</p>
             <a
               href="https://www.linkedin.com/in/franco-berlochi-programador"
-              target="_blanck"
+              target="_blank"
               className="text-[#08d5d4]"
             >
               Franco-Berlochi-Linkedin

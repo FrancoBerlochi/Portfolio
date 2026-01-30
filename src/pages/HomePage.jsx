@@ -62,13 +62,13 @@ const HomePage = () => {
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
                 <a
                   href="https://www.linkedin.com/in/franco-berlochi-programador"
-                  target="_blanck"
+                  target="_blank"
                 >
                   <img src={linkedin} alt="" className="w-6 h-6" />
                 </a>
               </li>
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
-                <a href="https://github.com/FrancoBerlochi" target="_blanck">
+                <a href="https://github.com/FrancoBerlochi" target="_blank">
                   <img src={github} alt="" className="w-6 h-6" />
                 </a>
               </li>
