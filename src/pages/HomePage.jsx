@@ -10,7 +10,6 @@ import Contact from '../components/Contact'
 
 const HomePage = () => {
 
-
   const [navColor, setNavColor] = useState("#inicio");
   const [mobile, setMobile] = useState(false);
 
@@ -24,6 +23,11 @@ const HomePage = () => {
 
   const handleSetNavColor = (path) => {
     setNavColor(path)
+  }
+
+  const handleMail = () =>{
+    const email = ["franco", "bervano.com.ar"].join("@");
+    window.location.href = `mailto:${email}`;
   }
   return (
     <>
@@ -55,7 +59,7 @@ const HomePage = () => {
             </div>
             <ul className="flex gap-6 mt-10 presentation-icons ">
               <li className="border-2 border-[#56D7F1] py-3 px-3 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-150 linear">
-                <a href="/cv/Franco_Berlochi_CV.pdf" download>
+                <a onClick={handleMail}>
                   <img src="/assets/email.svg" alt="" className="w-6 h-6" />
                 </a>
               </li>

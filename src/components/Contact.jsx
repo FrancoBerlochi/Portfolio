@@ -11,11 +11,18 @@ const Contact = () => {
       </p>
       <div className="flex w-[65%] mt-20 justify-between px-40">
         <div className="flex gap-4">
-          <img
-            src="/assets/github.png"
-            className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
-            alt=""
-          />
+          <a
+            href="https://github.com/FrancoBerlochi"
+            target="_blank"
+
+          >
+            <img
+              src="/assets/github.png"
+              className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
+              alt=""
+            />
+          </a>
+
           <div className="flex flex-col">
             <p className="text-gray-300">Github</p>
             <a
@@ -28,11 +35,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex gap-4">
-          <img
-            src="/assets/linkedin.png"
-            alt=""
-            className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
-          />
+          <a
+            href="https://www.linkedin.com/in/franco-berlochi-programador"
+            target="_blank"
+
+          >
+            <img
+              src="/assets/linkedin.png"
+              alt=""
+              className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
+            />
+          </a>
+
           <div className="flex flex-col">
             <p className="text-gray-300">Linkedin</p>
             <a
@@ -45,11 +59,13 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex gap-4">
-          <img
-            src="/assets/email.svg"
-            alt=""
-            className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
-          />
+          <a href="/cv/Franco_Berlochi_CV.pdf" download>
+            <img
+              src="/assets/cv.svg"
+              alt=""
+              className="w-14 h-14 bg-[#173854] rounded-2xl p-1"
+            />
+          </a>
           <div className="flex flex-col">
             <p className="text-gray-300">CV</p>
             <a
@@ -64,6 +80,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;
